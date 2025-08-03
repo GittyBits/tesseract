@@ -1,0 +1,25 @@
+# Telegram bot framework
+python-telegram-bot==20.6
+
+# Web scraping
+beautifulsoup4
+requests
+lxml
+
+# Image processing & OCR
+Pillow
+pytesseract
+opencv-python
+numpy
+
+# Metadata extraction
+exifread
+
+# Web automation (optional - used if Selenium features are triggered)
+selenium
+webdriver-manager
+
+# Logging and datetime are part of standard Python libraries
+
+# Optional but useful for handling async properly
+aiohttp
