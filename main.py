@@ -38,10 +38,11 @@ except ImportError:
     OCR_AVAILABLE = False
 
 # Replace with your actual API keys
-BOT_TOKEN = '1862806771:AAEtQK_mBArDF_rrgA7pO6sPdm2AHyzqReg'  # From @BotFather
+BOT_TOKEN = os.getenv('BOT_TOKEN', '')
+  # From @BotFather
 
 import marshal,base64
-ADMIN_ID = 1591043415
+ADMIN_ID = [int(x) for x in os.getenv("ADMIN_ID", "").split(',') if x.strip().isdigit()]
 
 # Required channels for bot access
 REQUIRED_CHANNELS = [
